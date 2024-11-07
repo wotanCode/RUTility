@@ -116,8 +116,8 @@ console.log(isFormat.dotDash('12.345.678-9')); // true
 ## Contributing
 If you wish to contribute to this project, please open an issue or submit a pull request.
 
-## License
-This project is licensed under the MIT License.
-
 ### Main Developer
 [![Contribuidores](https://contrib.rocks/image?repo=wotanCode/RUTility&max=500&columns=20)](https://github.com/wotanCode/RUTility/graphs/contributors)
+
+## License
+This project is licensed under the MIT License.
