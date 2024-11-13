@@ -1,6 +1,12 @@
+# Folders
 /node_modules
 /dist-browser
 /dist-node
 /dist
 /coverage
+
+# Files
 package-lock.json
+
+# OS Files
+.DS_Store

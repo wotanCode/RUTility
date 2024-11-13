@@ -1,6 +1,6 @@
 {
   "name": "rutility",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "main": "dist/index.js",
   "browser": "dist/index.js",
   "module": "dist/index.js",
@@ -10,9 +10,12 @@
     "test:coverage": "npx jest --coverage --collectCoverageFrom='src/**/*.ts'",
     "test:lint": "eslint --fix",
     "test": "npm run test:unit & npm run test:coverage & npm run test:lint & npm run prettier-format",
-    "build": "tsc --project tsconfig.json"
+    "build": "npm run test && tsc --project tsconfig.json",
+    "public-npm": "npm run build && npm publish --access public"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.js",

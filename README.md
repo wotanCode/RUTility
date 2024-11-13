@@ -25,95 +25,99 @@ const { format, calculateDv, isValidRut, isFormat } = require('rutility');
 import { format, calculateDv, isValidRut, isFormat } from 'rutility';
 ```
 
-## Formatting Functions
-`format.dot(rut: string): string`
-Formats a RUT by adding dots.
+### Formatting Functions
+<table border="1">
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>format.dot(rut: string): string</code></td>
+      <td>Formats a RUT by adding dots.</td>
+      <td><code>console.log(format.dot('12345678')); // '12.345.678'</code></td>
+    </tr>
+    <tr>
+      <td><code>format.dash(rut: string): string</code></td>
+      <td>Formats a RUT by adding a dash.</td>
+      <td><code>console.log(format.dash('123456780')); // '12345678-0'</code></td>
+    </tr>
+    <tr>
+      <td><code>format.dotDash(rut: string): string</code></td>
+      <td>Formats a RUT by adding dots and a dash.</td>
+      <td><code>console.log(format.dotDash('123456780')); // '12.345.678-0'</code></td>
+    </tr>
+    <tr>
+      <td><code>format.notDot(rut: string): string</code></td>
+      <td>Removes dots from a RUT.</td>
+      <td><code>console.log(format.notDot('12.345.678-0')); // '12345678-0'</code></td>
+    </tr>
+    <tr>
+      <td><code>format.notDash(rut: string): string</code></td>
+      <td>Removes the dash and check digit from a RUT.</td>
+      <td><code>console.log(format.notDash('12.345.678-0')); // '12.345.678'</code></td>
+    </tr>
+    <tr>
+      <td><code>format.notDotDash(rut: string): string</code></td>
+      <td>Removes dots and the dash from a RUT.</td>
+      <td><code>console.log(format.notDotDash('12.345.678-9')); // '12345678'</code></td>
+    </tr>
+  </tbody>
+</table>
 
-```javascript
-console.log(format.dot('12345678')); // '12.345.678'
-console.log(format.dot('12345678-K')); // '12.345.678-K'
-```
-
-`format.dash(rut: string): string`
-Formats a RUT by adding a dash.
-
-```javascript
-console.log(format.dash('123456780')); // '12345678-0'
-console.log(format.dash('12.345.6780')); // '12.345.678-0'
-console.log(format.dash('12')); // '1-2'
-```
-
-`format.dotDash(rut: string): string`
-Formats a RUT by adding dots and a dash.
-
-```javascript
-console.log(format.dotDash('123456780')); // '12.345.678-0'
-console.log(format.dotDash('12345678-K')); // '12.345.678-K'
-```
-
-`format.notDot(rut: string): string`
-Removes dots from a RUT.
-
-```javascript
-console.log(format.notDot('12.345.678-0')); // '12345678-0'
-console.log(format.notDot('12.345.678')); // '12345678'
-```
-
-`format.notDash(rut: string): string`
-Removes the dash and check digit from a RUT.
-
-```javascript
-console.log(format.notDash('12.345.678-0')); // '12.345.678'
-console.log(format.notDash('12345678-0')); // '12345678'
-```
-
-`format.notDotDash(rut: string): string`
-Removes dots and the dash from a RUT.
-
-```javascript
-console.log(format.notDotDash('12.345.678-9')); // '12345678'
-console.log(format.notDotDash('12.345.678')); // '12345678'
-```
-
-## Validation Functions
-`calculateDv(rut: string | number): string`
-Calculates the check digit of a Chilean RUT.
-
-```javascript
-console.log(calculateDv('12.345.678')); // '5'
-console.log(calculateDv('12345678')); // '5'
-console.log(calculateDv(12345678)); // '5'
-```
-
-`isValidRut(rut: string): boolean`
-Validates if a Chilean RUT is valid.
-
-```javascript
-console.log(isValidRut('12.345.678-5')); // true
-console.log(isValidRut('12345678-5')); // true
-```
+### Validation Functions
+<table border="1">
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>calculateDv(rut: string | number): string</code></td>
+      <td>Calculates the check digit of a Chilean RUT.</td>
+      <td><code>console.log(calculateDv('12.345.678')); // '5'</code></td>
+    </tr>
+    <tr>
+      <td><code>isValidRut(rut: string): boolean</code></td>
+      <td>Validates if a Chilean RUT is valid.</td>
+      <td><code>console.log(isValidRut('12.345.678-5')); // true</code></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Format Validations
-`isFormat.dot(rut: string): boolean`
-Checks if a RUT has the correct format with dots.
-
-``` javascript
-console.log(isFormat.dot('12.345.678')); // true
-```
-
-isFormat.dash(rut: string): boolean
-Checks if a RUT has the correct format with a dash.
-
-``` javascript
-console.log(isFormat.dash('12345678-9')); // true
-```
-
-`isFormat.dotDash(rut: string): boolean`
-Checks if a RUT has the correct format with dots and a dash.
-
-```javascript
-console.log(isFormat.dotDash('12.345.678-9')); // true
-```
+<table border="1">
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>isFormat.dot(rut: string): boolean</code></td>
+      <td>Checks if a RUT has the correct format with dots.</td>
+      <td><code>console.log(isFormat.dot('12.345.678')); // true</code></td>
+    </tr>
+    <tr>
+      <td><code>isFormat.dash(rut: string): boolean</code></td>
+      <td>Checks if a RUT has the correct format with a dash.</td>
+      <td><code>console.log(isFormat.dash('12345678-9')); // true</code></td>
+    </tr>
+    <tr>
+      <td><code>isFormat.dotDash(rut: string): boolean</code></td>
+      <td>Checks if a RUT has the correct format with dots and a dash.</td>
+      <td><code>console.log(isFormat.dotDash('12.345.678-9')); // true</code></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Contributing
 If you wish to contribute to this project, please open an issue or submit a pull request.
