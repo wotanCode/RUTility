@@ -13,5 +13,8 @@ eslint.config.mjs
 package-lock.json
 .prettierrc
 
+# OS Files
+.DS_Store
+
 # Include
 !dist

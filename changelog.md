@@ -1,3 +1,9 @@
+### 1.0.17 Better documentation
+- Add `public-npm` script in `package.json`.
+- Update `.gitignore` and `npmignore`.
+- Update `FUNDING.yml`.
+- Update `README.md`.
+
 ### 1.0.16 Fix build compilation
 
 ### 1.0.15 Update Repository and readme
