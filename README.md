@@ -1,7 +1,16 @@
+[npm-version-shield]: https://img.shields.io/npm/v/rutility?style=flat&colorA=000000&colorB=000000
+[npm-downloads-shield]: https://img.shields.io/npm/dt/rutility.svg?style=flat&colorA=000000&colorB=000000
+[npm-url]: https://www.npmjs.com/package/rutility
+[github-stars-shield]: https://img.shields.io/github/stars/wotanCode/rutility?style=flat&colorA=000000&colorB=000000
+[github-url]: https://github.com/wotanCode/rutility
+
+[![Version][npm-version-shield]][npm-url]
+[![Downloads][npm-downloads-shield]][npm-url]
+[![GitHub Stars][github-stars-shield]][github-url]
+
+
 # RUTility
 ## Chilean RUT Validation and Formatting Library
-[![Version](https://img.shields.io/npm/v/rutility?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/rutility)
-[![Downloads](https://img.shields.io/npm/dt/rutility.svg?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/rutility)
 
 A library for validating and formatting the Chilean RUT (Rol Único Tributario). This library provides functions to format the RUT with dots and dashes, as well as to validate its format and check digit.
 
