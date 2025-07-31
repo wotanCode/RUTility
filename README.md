@@ -131,16 +131,6 @@ import { format, calculateDv, isValidRut, isFormat } from 'rutility';
 ## Contributing
 If you wish to contribute to this project, please open an issue or submit a pull request.
 
-## Star History
-
-<a href="https://star-history.com/#wotanCode/RUTility&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=wotanCode/RUTility&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=wotanCode/RUTility&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=wotanCode/RUTility&type=Date" />
- </picture>
-</a>
-
 ### Main Developer
 [![Contribuidores](https://contrib.rocks/image?repo=wotanCode/RUTility&max=500&columns=20)](https://github.com/wotanCode/RUTility/graphs/contributors)
 
